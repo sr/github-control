@@ -2,7 +2,10 @@ source "http://gemcutter.org"
 
 gem "json"
 gem "nokogiri"
-gem "rest-client"
+gem "rack-client", "0.2.2.pre", :git => "git://github.com/atmos/rack-client"
+gem "rack-test"
+gem "halorgium-actionpack", "=3.0.pre"
+
 
 only :test do
   gem "rake"
